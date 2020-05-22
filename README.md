@@ -16,3 +16,8 @@ The below is how you'd use the code in this repo with Azure Static Web Apps.
 4. Inside of the Azure console, search for "Static Web Apps" and click the choice presented.
 5. Set all of the settings as you'd prefer to have them, and direct Azure to use the repo you just put on GitHub as the basis of the code.
 6. When Azure has completed setting up your project, you should be able to see a URL in the Overview of your app. Click it and your application should be visible!
+
+## References
+
+- [Microsoft: Routes in Azure Static Web Apps Preview](https://docs.microsoft.com/en-us/azure/static-web-apps/routes)
+- [Microsoft: GitHub Actions workflows for Azure Static Web Apps Preview](https://docs.microsoft.com/sv-se/azure/static-web-apps/github-actions-workflow)

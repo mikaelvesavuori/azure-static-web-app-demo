@@ -9,7 +9,6 @@ on:
     branches:
       - master
 
-# For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
 jobs:
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
@@ -28,7 +27,7 @@ jobs:
           app_build_command: "yarn build"
           api_location: "/api"
           #api_build_command: "yarn build"
-          routes_location: "/src"
+          routes_location: "/dist"
           app_artifact_location: "/dist"
 
   close_pull_request_job:
