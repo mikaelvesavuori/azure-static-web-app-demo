@@ -7,14 +7,14 @@ import View from 'containers/View';
 import H1 from 'components/H1';
 import Paragraph from 'components/Paragraph';
 
-const ThatView = () => (
-	<View title="Demo Site – ThatView">
+const ThisView = () => (
+	<View title="Demo Site – This View">
 		<Helmet>
-			<meta property="og:site_name" content="Demo Site" />
-			<meta property="og:title" content="Demo — ThatView" />
-			<meta property="og:description" content="ThatView description." />
+			<meta property="og:site_name" content="Azure Static Web App demo" />
+			<meta property="og:title" content="Azure Static Web App demo" />
+			<meta property="og:description" content="Basic demonstration of an Azure Static Web App using React." />
 		</Helmet>
-		<H1>ThatView</H1>
+		<H1>ThisView</H1>
 		<Paragraph>
 			<Link to="/thisview">Link to ThisView</Link>
 		</Paragraph>
@@ -24,4 +24,4 @@ const ThatView = () => (
 	</View>
 );
 
-export default withRouter(ThatView);
+export default withRouter(ThisView);

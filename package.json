@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"author": "Mikael Vesavuori",
+	"description": "Basic demonstration of an Azure Static Web App using React.",
 	"license": "MIT",
 	"dependencies": {
 		"react": "^16.13.1",

@@ -1,6 +1,6 @@
 # Azure Static Web App demo
 
-Basic demonstration of an Azure Static Web App.
+Basic demonstration of an Azure Static Web App using React.
 
 For the frontend, I've used my ["minimal useful React PWA"](https://github.com/mikaelvesavuori/minimal-useful-react-pwa).
 
