@@ -101,6 +101,7 @@ module.exports = {
         { from: `${srcDir}/manifest.webmanifest`, to: `${distDir}/` },
         { from: `${srcDir}/robots.txt`, to: `${distDir}/` },
         { from: `${srcDir}/sitemap.xml`, to: `${distDir}/` },
+        { from: `${srcDir}/routes.json`, to: `${distDir}/` },
         { from: `${srcDir}/assets/`, to: `${distDir}/assets/` }
       ],
 		}),
