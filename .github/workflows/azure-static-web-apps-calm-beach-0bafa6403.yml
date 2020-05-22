@@ -27,7 +27,7 @@ jobs:
           app_build_command: "yarn build"
           api_location: "/api"
           #api_build_command: "yarn build"
-          routes_location: "/" # Relative to the built application
+          #routes_location: "/" # Relative to the built application
           app_artifact_location: "/dist"
 
   close_pull_request_job:
