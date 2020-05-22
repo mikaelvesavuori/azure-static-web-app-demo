@@ -94,17 +94,16 @@ module.exports = {
 	},
 	plugins: [
 		new CleanWebpackPlugin(),
-		new CopyWebpackPlugin([
-			"crossdomain.xml",
-			"favicon.ico",
-			"manifest.webmanifest",
-			"robots.txt",
-			"sitemap.xml",
-			{
-				from: `${srcDir}/assets/`,
-				to: `${distDir}/assets/` // Ugly as shit, but is a fix until we manage to get paths to work correctly again
-			}
-		]),
+		new CopyWebpackPlugin({
+      patterns: [
+        { from: `${srcDir}/crossdomain.xml`, to: `${distDir}/` },
+        { from: `${srcDir}/favicon.ico`, to: `${distDir}/` },
+        { from: `${srcDir}/manifest.webmanifest`, to: `${distDir}/` },
+        { from: `${srcDir}/robots.txt`, to: `${distDir}/` },
+        { from: `${srcDir}/sitemap.xml`, to: `${distDir}/` },
+        { from: `${srcDir}/assets/`, to: `${distDir}/assets/` }
+      ],
+		}),
 		new HtmlWebpackPlugin({
 			template: path.join(srcDir, "index.html"),
 			path: distDir,
