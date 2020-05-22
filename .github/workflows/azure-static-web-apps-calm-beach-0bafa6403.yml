@@ -23,11 +23,11 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_CALM_BEACH_0BAFA6403 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/src"
-          app_build_command: "yarn build"
+          app_location: "/"
+          app_build_command: "npm run build"
           api_location: "/api"
           #api_build_command: "yarn build"
-          app_artifact_location: "../dist"
+          app_artifact_location: "dist"
           #routes_location: "/dist"
 
   close_pull_request_job:
