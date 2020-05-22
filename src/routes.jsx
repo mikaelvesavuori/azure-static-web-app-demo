@@ -12,6 +12,7 @@ class Routes extends React.Component {
 		return (
 			<Switch>
 				<Route exact path="/" render={() => <DemoView title="Azure Static Web App demo" />} />
+				<Route render={() => <Redirect to="/" />} />
 			</Switch>
 		);
 	}
